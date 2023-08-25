@@ -209,4 +209,8 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
     function getRequestConfirmations() public pure returns (uint16) {
         return REQ_CONFIRMATIONS;
     }
+
+    function getInterval() public view returns (uint256) {
+        return i_interval;
+    }
 }
